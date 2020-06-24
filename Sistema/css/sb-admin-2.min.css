@@ -9928,3 +9928,10 @@ body.sidebar-toggled footer.sticky-footer {
 .col-lg-6 d-none d-lg-block bg-login-image {
     background-image: url(../img/estaes.png);
 }
+
+.selecione{
+  display: inline-grid;
+}
+.Lista_Cotizacion a{
+  color: white;
+}

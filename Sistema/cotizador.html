@@ -284,12 +284,311 @@
         <!-- Begin Page Content Programe aqui su sistema -->
         <div class="container-fluid">
 
+          <div class="carrito_body">
+            <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home / interface / cotizador</li>
+  </ol>
+</nav>
+        <!--  Page Wrapper -->
+
+<div class="form_cotizador">
+<hr>
+<h1>Cotizador</h1>
+<hr>
+<form class="Formulario_cotizador" action="index.html" method="post">
+<div class="row">
 
 
+    <div class="col-md-3 mb-3">
+    <label for=""> Selceione clientes </label>
+    <input type="text" name="" value="">
     </div>
-    <!-- End of Content Wrapper -->
+    <div class="col-md-3 mb-3">
+    <label for="">Atencion dirigida</label>
+    <input type="text" name="" value="">
+    </div>
+    <div class="col-md-3 mb-3">
+    <label for="">Telefono de contacto</label>
+    <input type="text" name="" value="">
+    </div>
+    <div class="col-md-3 mb-3">
+    <label for="">Correo electronico</label>
+    <input type="text" name="" value="">
+    </div>
+</div>
+<div class="row">
 
+
+    <div class="col-md-3 mb-3">
+    <label for="">Tipo de pago</label>
+    <input type="text" name="" value="">
+    </div>
+    <div class="col-md-3 mb-3">
+    <label for="">Valides de oferta</label>
+    <input type="text" name="" value="">
+    </div>
+    <div class="col-md-3 mb-3">
+    <label for="">Tiempo de entrega</label>
+    <input type="text" name="" value="">
+    </div>
+    <div class="col-md-3 mb-3">
+    <label for="">Descripcion de evento</label>
+    <input type="text" name="" value="">
+    </div>
+    <div class="selecione row col-md-6 ">
+
+
+      <label for="">Tipo de evento</label>
+    <select class="">
+  <option>Infantil</option>
+  <option>empresarial</option>
+  <option>personalisada</option>
+
+</select>
   </div>
+</div>
+
+
+            </form>
+            <hr>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Agregar Cliente
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Agregar Cliente</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form" action="index.html" method="post">
+<div class="row">
+  <div class="col-md-6">
+
+
+  <label for="">Nombre</label>
+  <input type="text" name="" value="">
+  </div>
+<div class="col-md-6">
+
+
+  <label for="">Apellido</label>
+  <input type="text" name="" value="">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+
+
+  <label for="">Direccion</label>
+  <input type="text" name="" value="">
+  </div>
+  <div class="col-md-6">
+
+<div class="col-md-6">
+
+
+  <label for="">Correo </label>
+  <input type="text" name="" value="">
+  </div>
+    </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+
+
+  <label for="">Telefono</label>
+  <input type="text" name="" value="">
+  </div>
+  <div class="col-md-6">
+
+
+  <label for="">Cargo</label>
+  <input type="text" name="" value="">
+  </div>
+</div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div><!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+  Agregar Producto
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Crear Producto</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+
+
+          <label for="">Nombre de producto</label>
+          <input type="text" name="" value="">
+          </div>
+        <div class="col-md-6">
+
+
+          <label for="">Marca</label>
+          <input type="text" name="" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+
+
+          <label for="">Descripcion</label>
+          <input type="text" name="" value="">
+          </div>
+        <div class="col-md-6">
+
+
+          <label for="">Estado</label>
+          <input type="text" name="" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+
+
+          <label for="">proveedor</label>
+          <input type="text" name="" value="">
+          </div>
+        <div class="col-md-6">
+
+
+          <label for="">Precio</label>
+          <input type="text" name="" value="">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div><!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">
+  Ver productos
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Selecione Producto</h4>
+      </div>
+      <div class="modal-body">
+        <hr>
+        <nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+        <hr>
+        <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">codigo</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Cantidad</th>
+        <th scope="col">Precio</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>300</td>
+        <th>  <button type="button-primary" name="button">selecionar</button></th>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+        <td>300</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+        <td>300</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-primary btn-lg">Guardar cotizacion</button>
+            </div>
+            <hr>
+<div class="tablas">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Codido</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Precio unitario</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td>@mdo</td>
+        <td>@mdo</td>
+        <td> <button type="button" name="button"> eliminar</button> </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
   <!-- End of Page Wrapper -->
 
   <!-- Scroll to Top Button-->
