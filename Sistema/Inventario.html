@@ -66,6 +66,8 @@
 
             <a class="collapse-item" href="cotizador.html">Cotizador</a>
             <a class="collapse-item" href="ver_cotizacion.html">Ver cotizaciones</a>
+            <a  class="collapse-item" href="Clientes.html">Ver clientes</a>
+              <a class="collapse-item" href="ver_productos.html">Ver Productos</a>
           </div>
         </div>
       </li>
@@ -287,7 +289,7 @@
         <div class="container-fluid">
 
 
-      <body>  
+      <body>
 <ol class="breadcrumb">
   <li><a href="#">Tablero/</a></li>&nbsp;
 <li><a href="#">Agregar Inventario/</a></li>&nbsp;
@@ -297,196 +299,196 @@
 </ol>
 
 
-           <br /><br />  
-           <div class="container" style="width:700px;">  
-                <h3 align="center">Inventario-Material</h3>  
-                <br />  
-                <div class="table-responsive">  
-                     <div align="right">  
-                          <button type="button" name="agregar" id="add" data-toggle="modal" data-target="#add_data_Modal" class="btn btn-warning">Agregar</button>  
-                     </div>  
-                     <br />  
-                     <div id="employee_table">  
-                          <table class="table table-bordered">  
-                               <tr>  
-                                    <th width="70%">Nombre</th>  
-                                    
-                                    <th width="15%">Editar</th>  
-                                    <th width="15%">Ver</th>  
-                               </tr>  
-                               
-                           
-                               
-                               <tr>  
-                                    <td></td>  
-                                    <td><input type="button" name="edit" value="editar" id="" class="btn btn-info btn-xs edit_data" /></td>  
-                                    <td><input type="button" name="view" value="ver" id="" class="btn btn-info btn-xs view_data" /></td>  
-                               </tr>  
-                               
-                            
-                          </table>  
-                     </div>  
-                </div>  
-           </div>  
-      </body>  
- </html>  
- <div id="dataModal" class="modal fade">  
-      <div class="modal-dialog">  
-           <div class="modal-content">  
-                <div class="modal-header">  
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>  
-                     <h4 class="modal-title">Employee Details</h4>  
-                </div>  
-                <div class="modal-body" id="employee_detail">  
-                </div>  
-                <div class="modal-footer">  
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>  
-                </div>  
-           </div>  
-      </div>  
- </div>  
- <div id="add_data_Modal" class="modal fade">  
-      <div class="modal-dialog">  
-           <div class="modal-content">  
-                <div class="modal-header">  
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>  
-                     <h4 class="modal-title">Material eventos</h4>  
-                </div>  
-                <div class="modal-body">  
-                     <form method="post" id="insert_form">  
-                          <label>Nombre</label>  
-                          <input type="text" name="name" id="name" class="form-control" />  
-                          <br />  
-                          <label>Accesorios</label>  
-                          <textarea name="address" id="address" class="form-control"></textarea>  
-                          <br />  
-                          <label>Ubicación</label>  
-                          <select name="gender" id="gender" class="form-control">  
-                               <option value="Male"></option>  
-                               <option value="Female"></option>  
-                          </select>  
-                           
-                           <label>Cantidad</label>  
-                          <select name="gender" id="gender" class="form-control">  
-                               <option value="Male"></option>  
-                               <option value="Female"></option>  
-                          </select>  
+           <br /><br />
+           <div class="container" style="width:700px;">
+                <h3 align="center">Inventario-Material</h3>
+                <br />
+                <div class="table-responsive">
+                     <div align="right">
+                          <button type="button" name="agregar" id="add" data-toggle="modal" data-target="#add_data_Modal" class="btn btn-warning">Agregar</button>
+                     </div>
+                     <br />
+                     <div id="employee_table">
+                          <table class="table table-bordered">
+                               <tr>
+                                    <th width="70%">Nombre</th>
 
-                             <label>Categoria</label>  
-                          <select name="gender" id="gender" class="form-control">  
-                               <option value="Male"></option>  
-                               <option value="Female"></option>  
-                          </select>  
-                            
-                             <label>Estado</label>  
-                          <select name="gender" id="gender" class="form-control">  
-                               <option value="Male"></option>  
-                               <option value="Female"></option>  
-                          </select>  
+                                    <th width="15%">Editar</th>
+                                    <th width="15%">Ver</th>
+                               </tr>
 
 
-                         <br />  
-                          <label>Marca</label>  
-                          <input type="text" name="designation" id="designation" class="form-control" />  
-                          <br />  
-                          <label>Precio</label>  
-                          <input type="text" name="age" id="age" class="form-control" />  
-                          <br />  
 
-                           <label>Proveedor</label>  
+                               <tr>
+                                    <td></td>
+                                    <td><input type="button" name="edit" value="editar" id="" class="btn btn-info btn-xs edit_data" /></td>
+                                    <td><input type="button" name="view" value="ver" id="" class="btn btn-info btn-xs view_data" /></td>
+                               </tr>
+
+
+                          </table>
+                     </div>
+                </div>
+           </div>
+      </body>
+ </html>
+ <div id="dataModal" class="modal fade">
+      <div class="modal-dialog">
+           <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4 class="modal-title">Employee Details</h4>
+                </div>
+                <div class="modal-body" id="employee_detail">
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+           </div>
+      </div>
+ </div>
+ <div id="add_data_Modal" class="modal fade">
+      <div class="modal-dialog">
+           <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <h4 class="modal-title">Material eventos</h4>
+                </div>
+                <div class="modal-body">
+                     <form method="post" id="insert_form">
+                          <label>Nombre</label>
+                          <input type="text" name="name" id="name" class="form-control" />
+                          <br />
+                          <label>Accesorios</label>
+                          <textarea name="address" id="address" class="form-control"></textarea>
+                          <br />
+                          <label>Ubicación</label>
+                          <select name="gender" id="gender" class="form-control">
+                               <option value="Male"></option>
+                               <option value="Female"></option>
+                          </select>
+
+                           <label>Cantidad</label>
+                          <select name="gender" id="gender" class="form-control">
+                               <option value="Male"></option>
+                               <option value="Female"></option>
+                          </select>
+
+                             <label>Categoria</label>
+                          <select name="gender" id="gender" class="form-control">
+                               <option value="Male"></option>
+                               <option value="Female"></option>
+                          </select>
+
+                             <label>Estado</label>
+                          <select name="gender" id="gender" class="form-control">
+                               <option value="Male"></option>
+                               <option value="Female"></option>
+                          </select>
+
+
+                         <br />
+                          <label>Marca</label>
+                          <input type="text" name="designation" id="designation" class="form-control" />
+                          <br />
+                          <label>Precio</label>
+                          <input type="text" name="age" id="age" class="form-control" />
+                          <br />
+
+                           <label>Proveedor</label>
                           <input type="text" name="age" id="age" class="form-control" />
 
                            <br/>
-                            <label>Telefono</label>  
+                            <label>Telefono</label>
                           <input type="text" name="age" id="age" class="form-control" />
                             <br/>
 
-                          <input type="hidden" name="employee_id" id="employee_id" />  
-                          <input type="submit" name="insert" id="insert" value="Crear" class="btn btn-success" />  
-                     </form>  
-                </div>  
-                <div class="modal-footer">  
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>  
-                </div>  
-           </div>  
-      </div>  
- </div>  
- <script>  
- $(document).ready(function(){  
-      $('#add').click(function(){  
-           $('#insert').val("Insert");  
-           $('#insert_form')[0].reset();  
-      });  
-      $(document).on('click', '.edit_data', function(){  
-           var employee_id = $(this).attr("id");  
-           $.ajax({  
-                url:"fetch.php",  
-                method:"POST",  
-                data:{employee_id:employee_id},  
-                dataType:"json",  
-                success:function(data){  
-                     $('#name').val(data.name);  
-                     $('#address').val(data.address);  
-                     $('#gender').val(data.gender);  
-                     $('#designation').val(data.designation);  
-                     $('#age').val(data.age);  
-                     $('#employee_id').val(data.id);  
-                     $('#insert').val("Update");  
-                     $('#add_data_Modal').modal('show');  
-                }  
-           });  
-      });  
-      $('#insert_form').on("submit", function(event){  
-           event.preventDefault();  
-           if($('#name').val() == "")  
-           {  
-                alert("Name is required");  
-           }  
-           else if($('#address').val() == '')  
-           {  
-                alert("Address is required");  
-           }  
-           else if($('#designation').val() == '')  
-           {  
-                alert("Designation is required");  
-           }  
-           else if($('#age').val() == '')  
-           {  
-                alert("Age is required");  
-           }  
-           else  
-           {  
-                $.ajax({  
-                     url:"insert.php",  
-                     method:"POST",  
-                     data:$('#insert_form').serialize(),  
-                     beforeSend:function(){  
-                          $('#insert').val("Inserting");  
-                     },  
-                     success:function(data){  
-                          $('#insert_form')[0].reset();  
-                          $('#add_data_Modal').modal('hide');  
-                          $('#employee_table').html(data);  
-                     }  
-                });  
-           }  
-      });  
-      $(document).on('click', '.view_data', function(){  
-           var employee_id = $(this).attr("id");  
-           if(employee_id != '')  
-           {  
-                $.ajax({  
-                     url:"select.php",  
-                     method:"POST",  
-                     data:{employee_id:employee_id},  
-                     success:function(data){  
-                          $('#employee_detail').html(data);  
-                          $('#dataModal').modal('show');  
-                     }  
-                });  
-           }            
-      });  
- });  
+                          <input type="hidden" name="employee_id" id="employee_id" />
+                          <input type="submit" name="insert" id="insert" value="Crear" class="btn btn-success" />
+                     </form>
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+           </div>
+      </div>
+ </div>
+ <script>
+ $(document).ready(function(){
+      $('#add').click(function(){
+           $('#insert').val("Insert");
+           $('#insert_form')[0].reset();
+      });
+      $(document).on('click', '.edit_data', function(){
+           var employee_id = $(this).attr("id");
+           $.ajax({
+                url:"fetch.php",
+                method:"POST",
+                data:{employee_id:employee_id},
+                dataType:"json",
+                success:function(data){
+                     $('#name').val(data.name);
+                     $('#address').val(data.address);
+                     $('#gender').val(data.gender);
+                     $('#designation').val(data.designation);
+                     $('#age').val(data.age);
+                     $('#employee_id').val(data.id);
+                     $('#insert').val("Update");
+                     $('#add_data_Modal').modal('show');
+                }
+           });
+      });
+      $('#insert_form').on("submit", function(event){
+           event.preventDefault();
+           if($('#name').val() == "")
+           {
+                alert("Name is required");
+           }
+           else if($('#address').val() == '')
+           {
+                alert("Address is required");
+           }
+           else if($('#designation').val() == '')
+           {
+                alert("Designation is required");
+           }
+           else if($('#age').val() == '')
+           {
+                alert("Age is required");
+           }
+           else
+           {
+                $.ajax({
+                     url:"insert.php",
+                     method:"POST",
+                     data:$('#insert_form').serialize(),
+                     beforeSend:function(){
+                          $('#insert').val("Inserting");
+                     },
+                     success:function(data){
+                          $('#insert_form')[0].reset();
+                          $('#add_data_Modal').modal('hide');
+                          $('#employee_table').html(data);
+                     }
+                });
+           }
+      });
+      $(document).on('click', '.view_data', function(){
+           var employee_id = $(this).attr("id");
+           if(employee_id != '')
+           {
+                $.ajax({
+                     url:"select.php",
+                     method:"POST",
+                     data:{employee_id:employee_id},
+                     success:function(data){
+                          $('#employee_detail').html(data);
+                          $('#dataModal').modal('show');
+                     }
+                });
+           }
+      });
+ });
  </script>
 
 
