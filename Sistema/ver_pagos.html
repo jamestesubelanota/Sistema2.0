@@ -285,19 +285,170 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content Programe aqui su sistema -->
-        <div class="container-fluid">
-          <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Home / interface / Ver pagos</li>
-          </ol>
-          </nav>
-          <hr>
-          <h1>Tabla de pagos</h1>
-          <hr>
-          <hr>
-          <div class="row">
-            <div class="col-md-3 mb-3">
-            <button class="btn-primary" placeholder="Registrar pago" type="button" name="button"> <a href="Registrar_pago.html"> Registrar pago</a> </button>
+       
+			<!-- miga de pan-->
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+					<li class="breadcrumb-item"><a href="index.html">Tablero</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Ver pagos</li>
+				  </ol>
+				</nav>
+			
+				<hr>
+				
+				<h1> Tabla de Pagos </h1>
+				
+				<hr>
+				
+				<table class="table">
+				
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">Id</th>
+							<th scope="col">Fecha</th>
+							<th scope="col">Cliente</th>
+							<th scope="col">Vendedor</th>
+							<th scope="col">Tipo de Servicio</th>
+							<th scope="col">Transacción</th>
+							<th scope="col">Forma de Pago</th>
+							<th scope="col">Total</th>
+							<th scope="col">Acciones</th>
+						</tr>
+					</thead>
+					  
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>15/03/2019</td>
+							<td>Eduardo Santos</td>					
+							<td>Edwin Acosta</td>
+							<td>Infantil</td>
+							<td>Cancelado</td>						
+							<td>Efectivo</td>
+							<td>$130.000</td>
+							
+						</tr>
+						
+						<tr>
+							<th scope="row">2</th>
+							<td>17/03/2019</td>
+							<td>Camila Castro</td>					
+							<td>Emanuel Chavez</td>
+							<td>Empresarial</td>
+							<td>Cancelar</td>						
+							<td>Credito</td>
+							<td>$75.000</td>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<th scope="row">3</th>
+							<td>04/04/2019</td>
+							<td>Armando Escobar</td>					
+							<td>Edwin Acosta</td>
+							<td>Empresarial</td>
+							<td>Cancelado</td>						
+							<td>Efectivo</td>
+							<td>$75.000</td>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<th scope="row">4</th>
+							<td>10/04/2019</td>
+							<td>Carlos Mendez</td>					
+							<td>Emanuel Chavez</td>
+							<td>Infantil</td>
+							<td>Cancelado</td>						
+							<td>Credito</td>
+							<td>$65.000</td>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<th scope="row">5</th>
+							<td>16/04/2019</td>
+							<td>Valery Cifuentes</td>					
+							<td>Edwin Acosta</td>
+							<td>Personalizada</td>
+							<td>Cancelar</td>						
+							<td>Efectivo</td>
+							<td>$165.000</td>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<th scope="row">6</th>
+							<td>16/04/2019</td>
+							<td>Jessica Bohorquez</td>					
+							<td>Emanuel Chavez</td>
+							<td>Empresarial</td>
+							<td>Cancelado</td>						
+							<td>Credito</td>
+							<td>$65.000</td>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<th scope="row">7</th>
+							<td>20/05/2019</td>
+							<td>Fernando Cardenas</td>					
+							<td>Edwin Acosta</td>
+							<td>Empresarial</td>
+							<td>Cancelar</td>						
+							<td>Credito</td>
+							<td>$75.000</td>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<th scope="row">8</th>
+							<td>02/06/2019</td>
+							<td>Erney Grisales</td>					
+							<td>Emanuel Chavez</td>
+							<td>Infantil</td>
+							<td>Cancelado</td>						
+							<td>Credito</td>
+							<td>$85.000</td>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<th scope="row">9</th>
+							<td>25/06/2019</td>
+							<td>Jorge Loaiza</td>					
+							<td>Edwin Acosta</td>
+							<td>Empresarial</td>
+							<td>Cancelar</td>						
+							<td>Credito</td>
+							<td>$65.000</td>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<th scope="row">10</th>
+							<td>27/07/2019</td>
+							<td>Jhocsan Estupiñan</td>					
+							<td>Emanuel Chavez</td>
+							<td>Empresarial</td>
+							<td>Cancelado</td>						
+							<td>Efectivo</td>
+							<td>$100.000</td>
+							<td></td>
+						</tr>
+						
+					</tbody>
+					  
+				</table>
+			
+			
+			
+			
+			
+			
+
+		</div>
 
           </div>
 
@@ -305,38 +456,10 @@
           </div>
           <hr>
           <hr>
-          <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">Codigo</th>
-      <th scope="col">Cliente</th>
-      <th scope="col">Estado</th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-
+         
 
     </div>
+
     <!-- End of Content Wrapper -->
 
   </div>
