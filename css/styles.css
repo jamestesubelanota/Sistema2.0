@@ -9873,7 +9873,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-white-50 {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: white !important;
 }
 
 .text-hide {
@@ -10170,4 +10170,13 @@ header.masthead h1 {
 }
 .col-lg-4 col-sm-6{
   border-radius: 10px;
+}
+.form-horizontal{
+  border: 10px;
+}
+.form_mensaje{
+  border: solid;
+}
+.form_mensaje input{
+  border: solid;
 }
