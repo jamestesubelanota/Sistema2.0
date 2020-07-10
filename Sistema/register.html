@@ -38,27 +38,29 @@
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
                     <label for="">Nombre</label>
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Nombre">
+                    <input maxlength="7" pattern="]
+                    [A-Za-z]{2,7}" required title="Introduce un campo de 2 a 7 letras" type="text" class="form-control form-control-user" id="nombre_registro" placeholder="Nombre">
                   </div>
                   <div class="col-sm-6">
                     <label for="">Apellido</label>
-                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Apellido">
+                    <input pattern="]
+                    [A-Za-z]{2,7}" required title="Introduce un campo de 2 a 7 letras" type="text" class="form-control form-control-user" id="apellido_registro" placeholder="Apellido">
                   </div>
                   <div class="col-sm-6 mb-3 mb-sm-0">
                     <label for="">Telefono</label>
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="telefono">
+                    <input maxlength="9" pattern="[0-9]{9}" required type="text" class="form-control form-control-user" id="telefono_registro" placeholder="telefono">
                   </div>
                   <div class="col-sm-6">
                     <label for="">Numero de identificacion</label>
-                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Numero de identificacion">
+                    <input type="text" class="form-control form-control-user" id="numeroid_registro" placeholder="Numero de identificacion">
                   </div>
                   <div class="col-sm-6 mb-3 mb-sm-0">
                     <label for="">Genero</label>
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="Genero">
+                    <input type="text" class="form-control form-control-user" id="genero_registro" placeholder="Genero">
                   </div>
                   <div class="col-sm-6">
                     Fecha nacimiento
-                    <input type="time" class="form-control form-control-user" id="exampleLastName" placeholder="edad">
+                    <input type="time" class="form-control form-control-user" id="fecha_registro" placeholder="edad">
                   </div>
                 </div>
                 <div class="form-group">
@@ -72,9 +74,7 @@
                   </div>
 
                 </div>
-                <a href="login.html" class="btn btn-primary btn-user btn-block">
-                Registrar usuario
-                </a>
+                <button href="index.html" type="submit" class="btn btn-primary btn-user btn-block" id="enviar" name="button">registrar usuario</button>
                 <hr>
 
               </form>
@@ -102,7 +102,10 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+<!--validacion js -->
+<script src="js/validacion.js" >
 
+</script>
 </body>
 
 </html>
