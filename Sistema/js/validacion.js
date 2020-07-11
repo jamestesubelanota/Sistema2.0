@@ -101,3 +101,11 @@
      formulario.elements[i].className="console.error();";
    }
  }
+ function validarEmail(){
+   var elemento= document.getElementById('loginEmail').value;
+   if (!(/\w+([-+.']*@\w+([-.]\w+)*\.\W+([-.]\w+[-,]\W+)/.test(valor)){
+
+     return false;
+   }
+   return true;
+ }
