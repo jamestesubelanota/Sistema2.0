@@ -1,5 +1,5 @@
-window.onload=iniciar;
-function iniciar(){
+ window.onload=iniciar;
+ function iniciar(){
   document.getElementById("enviar").addEventLisstener('click',validar,false);
 
 
@@ -60,9 +60,9 @@ function iniciar(){
    return true;
  }
  function validarEmail(){
-   var elemento= document.getElementById('exampleInputEmail');
-   if (!elemento.checkValidity()){
-     error(elemento);
+   var elemento= document.getElementById('exampleInputEmail').value;
+   if (!(/\w+([-+.']*@\w+([-.]\w+)*\.\W+([-.]\w+[-,]\W+)/.test(valor)){
+
      return false;
    }
    return true;
