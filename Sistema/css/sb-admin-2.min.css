@@ -200,7 +200,8 @@ th {
 }
 label {
     display: inline-block;
-    margin-bottom: .5rem
+    margin-bottom: .5rem;
+    color:black;
 }
 button {
     border-radius: 0
@@ -221,7 +222,8 @@ textarea {
 }
 button,
 input {
-    overflow: visible
+    overflow: visible;
+    border-image: round;
 }
 button,
 select {
@@ -8756,7 +8758,7 @@ a:focus {
     background-color: #fff;
 
     background-size: cover}
-    
+
 .bg-gradient-secondary {
     background-color: #858796;
     background-image: linear-gradient(180deg, #858796 10%, #60616f 100%);
@@ -9936,6 +9938,11 @@ body.sidebar-toggled footer.sticky-footer {
  background-color: white;
 }
 .Formulario_cotizador{
-  border: solid;
+
   width: 88%;
+}
+.form_cotizador{
+  background: white;
+.input{
+  border-image: round;
 }
