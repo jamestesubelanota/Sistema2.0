@@ -4972,7 +4972,7 @@ a.close.disabled {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 150%;
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
@@ -9945,4 +9945,7 @@ body.sidebar-toggled footer.sticky-footer {
   background: white;
 .input{
   border-image: round;
+}
+.tablaProductoSelecionado{
+  background: white;
 }
