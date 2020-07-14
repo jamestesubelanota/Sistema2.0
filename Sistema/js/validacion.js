@@ -7,7 +7,7 @@
    var elemento= document.getElementById('nombre_registro');
    if (!elemento.checkValidity()){
      if (elemento.validity.valueMissing){
-       error2(elemento,"deve introducir un nombre")
+       error2(elemento,"debe introducir un nombre")
      } {
 
      }
