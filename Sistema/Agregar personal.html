@@ -300,38 +300,34 @@
 <h1>Agregar personal</h1>
 <hr>
          <!-- Aqui inicia el formulario -->
-         
+         <div class="Form">
          <form class="form-horizontal" id="validateForm">
-          <div class="form-row">
-            <div class="form-group col-md-6">
+            <div class="form-group ">
               <label for="inputEmail4">Nombres</label>
               <input  name="full_name" placeholder="Nombre" class="form-control"  type="text" id="validationTextarea">
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group ">
               <label for="inputPassword4">Apellido</label>
               <input  name="last_name" placeholder="Apellido" class="form-control"  type="text" id="validationTextarea">
             </div>
-          </div>
           <div class="form-group">
             <label for="inputAddress">Direccion</label>
             <input class="form-control" name="address" placeholder="Direccion">
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
+            <div class="form-group ">
               <label for="inputEmail4">Telefono 1</label>
               <input name="phone" placeholder="Telefono 1" class="form-control" type="text">
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group ">
               <label for="inputPassword4">Telefono 2</label>
               <input name="phone" placeholder="Telefono 2" class="form-control" type="text">
             </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
+          
+            <div class="form-group ">
               <label for="inputCity">Correo Electronico</label>
               <input name="email" placeholder="example@email.com" class="form-control"  type="text">
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group ">
               <label for="inputState">Tipo de indentificacion</label>
               <select name="role" class="form-control" >
                 <option value=" ">Elije</option>
@@ -339,11 +335,11 @@
                 <option>Cedula Extranjera</option>
               </select>
             </div>
-            <div class="form-group col-md-2">
+            <div class="form-group ">
               <label for="inputZip">Numero</label>
               <input name="phone" placeholder="Numero" class="form-control" type="text">
             </div>
-                <div class="form-group col-md-4">
+                <div class="form-group ">
               <label for="inputState">Cargo</label>
               <select name="role" class="form-control" >
                 <option value=" ">Elije</option>
@@ -352,7 +348,7 @@
                 <option>Secretaria</option>
               </select>
             </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group ">
               <label for="inputState">Genero</label>
               <select name="role" class="form-control" >
                 <option value=" ">Elije</option>
@@ -361,25 +357,28 @@
                 <option>Otro</option>
               </select>
             </div>
-                <div class="form-group col-md-4">
+                <div class="form-group ">
               <label for="inputZip">Fecha de Nacimiento</label>
               <input type="text" class="form-control" name="date" placeholder="1-01-1111" />
             </div>
 
               <div class="form-group">
 
-            <label for="exampleFormControlFile1">Foto de perfil</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFileLang" lang="en">
+                  <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+                </div>
             
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary" >Agregar</button>
+              
+               
                 
           </div>
+          <button type="submit" class="btn btn-primary" >Agregar</button> 
           </div>
-          </div> 
+          </div>
           </form>
+          </div>
           
-
           
     <!-- End of Content Wrapper -->
 
