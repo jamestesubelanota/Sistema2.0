@@ -29,7 +29,7 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
-
+  <link rel ="stylesheet" href="bootstrap4/css/bootstrap.min.css">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -302,6 +302,11 @@
 <html lang="en">
 
   <body>
+    <ol class="breadcrumb">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Libros</a></li>
+    <li class="active">Bootstrap 3</li>
+  </ol>
     <div style="height:50px"></div>
 
     <!--Ejemplo tabla con DataTables-->
@@ -512,83 +517,100 @@
           </div>
           <div class="modal-body">
             <form>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Nombre:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Accesorios:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Marca:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Proveedor:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Telefono:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">ubicacion:</label>
-                <select class="form-control" name="">
-                  <option value="">Casillero1</option>
-                  <option value="">Casillero2</option>
-                  <option value="">Casillero3</option>
-                  <option value="">Casillero4</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Estado:</label>
-        <select class="form-control" name="">
-          <option value="">Activo</option>
-          <option value="">Alquilado</option>
-          <option value="">En uso</option>
-          <option value="">Vendido</option>
-        </select>
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">ubicacion:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Categoria:</label>
-                <select class="form-control" name="">
-                  <option value="">Payasos</option>
-                  <option value="">Magia</option>
-                  <option value="">feria</option>
-                  <option value="">Circo</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Categoria:</label>
-                <select class="form-control" name="">
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                  <option value="">6</option>
-                  <option value="">7</option>
-                  <option value="">8</option>
-                  <option value="">9</option>
-                  <option value="">10</option>
+              <div class="form">
+                <form  id="validateForm" class="needs-validation" novalidate>
+                  <div class="Form">
+                   <form  id="validateForm" class="needs-validation" novalidate>
+                      <div class="form-group ">
+                        <label for="Nombre">Nombres</label>
+                        <input type="text" class="form-control" id="Nombre" placeholder=""  required>
+                        <div class="valid-feedback">Valido</div>
+                        <div class="invalid-feedback">Completa el campo.</div>
+                      </div>
+                      <div class="form-group ">
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" class="form-control" id="Apellido" placeholder=""  required>
+                        <div class="valid-feedback">Valido</div>
+                        <div class="invalid-feedback">Completa el campo.</div>
+                      </div>
+                    <div class="form-group">
+                      <label for="Address">Direccion</label>
+                      <input type="text" class="form-control" id="Address" placeholder=""  required>
+                        <div class="valid-feedback">Valido</div>
+                        <div class="invalid-feedback">Completa el campo.</div>
+                    </div>
+                      <div class="form-group ">
+                        <label for="Number1">Telefono 1</label>
+                        <input type="text" class="form-control" id="Number1" placeholder=""  required>
+                        <div class="valid-feedback">Valido</div>
+                        <div class="invalid-feedback">Completa el campo.</div>
+                      </div>
+                      <div class="form-group ">
+                        <label for="Number2">Telefono 2</label>
+                        <input type="text" class="form-control" id="Number2" placeholder=""  required>
+                        <div class="valid-feedback">Valido</div>
+                        <div class="invalid-feedback">Completa el campo.</div>
+                      </div>
 
-                </select>
-              </div>
+                      <div class="form-group ">
+                        <label for="Email">Correo Electronico</label>
+                        <input type="text" class="form-control" id="Email" placeholder=""  required>
+                        <div class="valid-feedback">Valido</div>
+                        <div class="invalid-feedback">Completa el campo.</div>
+                      </div>
+                      <div class="form-group ">
+                        <label for="Id">Tipo de indentificacion</label>
+                        <select class="custom-select"  required >
+                          <option value="">Elije</option>
+                          <option>Cedula de ciudadania</option>
+                          <option>Cedula Extranjera</option>
+                        </select>
+                        <div class="invalid-feedback">Por favor selecciona una opcion</div>
+                        <div class="valid-feedback">Valido</div>
+                      </div>
+                      <div class="form-group ">
+                        <label for="IdNumber">Numero</label>
+                        <input type="text" class="form-control" id="IdNumber" placeholder=""  required>
+                        <div class="valid-feedback">Valido</div>
+                        <div class="invalid-feedback">Completa el campo.</div>
+                      </div>
+                          <div class="form-group ">
+                        <label for="Cargo">Cargo</label>
+                        <select class="custom-select" id="Cargo" required >
+                          <option value="">Elije</option>
+                          <option>Cotizador</option>
+                          <option>Recreador</option>
+                          <option>Secretaria</option>
+                        </select>
+                        <div class="invalid-feedback">Por favor selecciona una opcion</div>
+                        <div class="valid-feedback">Valido</div>
+                      </div>
+                              <div class="form-group ">
+                        <label for="Genero">Genero</label>
+                        <select class="custom-select" id="Genero" required >
+                          <option value="">Elije</option>
+                          <option>Hombre</option>
+                          <option>Mujer</option>
+                          <option>Otro</option>
+                        </select>
+                        <div class="invalid-feedback">Por favor selecciona una opcion</div>
+                        <div class="valid-feedback">Valido</div>
+                      </div>
+                          <div class="form-group ">
+                        <label for="Birthday">Fecha de Nacimiento</label>
+                        <input type="text" class="form-control" id="Birthday" placeholder=""  required>
+                        <div class="valid-feedback">Valido</div>
+                        <div class="invalid-feedback">Completa el campo.</div>
+                      </div>
 
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
-            <button type="button" class="btn btn-primary">Guardar cambios</button>
-          </div>
-        </div>
-      </div>
-    </div>
+                        <div class="form-group">
+
+                    </div>
+                    <button type="submit" class="btn btn-primary" >Agregar</button>
+                    </div>
+                    </div>
+                    </form>
+                    </div>
 
     <!-- IDEA: fin modal_cliente -->
 <div class="contenedor">
@@ -705,7 +727,9 @@
 
     </script>
     <script src="DataTable/datatables.min.js"></script>
-
+    <script src="js/1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/codigo.js"></script>
 
 <script src="js/popup.js"></script>
 
