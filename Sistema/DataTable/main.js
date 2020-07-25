@@ -51,5 +51,3 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#example13').DataTable();
 } );
-
-alert("si funciona");
