@@ -18,11 +18,37 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   
-   <!-- link css anidacion enlazado con datatable css-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css"/>
-   
-   
-   
+  
+  <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+	<style>
+		
+		#formulario1{
+			border:2px solid;
+			border-radius:8px;
+		}
+  
+  
+	</style>
 
 </head>
 
@@ -112,10 +138,11 @@
 
             <a class="collapse-item" href="Registrar_pago.html">Registrar pago</a>
             <a class="collapse-item" href="ver_pagos.html">Ver pagos</a>
-			<a class="collapse-item" href="ordenpago.html">Orden de Pago</a>
+			<a class="collapse-item" href="ver_pagos.html">Orden de Pago</a>
           </div>
         </div>
       </li>
+
 
 
 
@@ -124,9 +151,9 @@
 
       <!-- Heading -->
 
-
-
-
+		
+	
+	
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -143,7 +170,7 @@
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
-      <div id="content">
+    <div id="content">
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
@@ -155,7 +182,7 @@
 
 
           <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto">
 
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
@@ -165,45 +192,49 @@
 
 
               <!-- Dropdown - Alerts -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                 <h6 class="dropdown-header">
                   Alerts Center
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                      <i class="fas fa-file-alt text-white"></i>
+					<div class="icon-circle bg-primary">
+						<i class="fas fa-file-alt text-white"></i>
                     </div>
                   </div>
-                  <div>
+				  
+                <div>
                     <div class="small text-gray-500">December 12, 2019</div>
                     <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                  </div>
+                </div>
                 </a>
+				
                 <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-donate text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
-                  </div>
+					<div class="mr-3">
+						<div class="icon-circle bg-success">
+						<i class="fas fa-donate text-white"></i>
+						</div>
+					</div>
+					<div>
+						<div class="small text-gray-500">December 7, 2019</div>
+						$290.29 has been deposited into your account!
+					</div>
                 </a>
+				
                 <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
-                  </div>
+					<div class="mr-3">
+						<div class="icon-circle bg-warning">
+						<i class="fas fa-exclamation-triangle text-white"></i>
+						</div>
+					</div>
+					<div>
+						<div class="small text-gray-500">December 2, 2019</div>
+						Spending Alert: We've noticed unusually high spending for your account.
+					</div>
                 </a>
+				
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-              </div>
+            </div>
             </li>
 
 
@@ -286,277 +317,176 @@
               </div>
             </li>
 
-          </ul>
+        </ul>
 
         </nav>
         <!-- End of Topbar -->
 
         <!-- Begin Page Content Programe aqui su sistema -->
+          <hr>
+          <h1>Registrar pagos</h1>
+          <hr>
+		  
+		<div class="container-fluid">
 
-		<!-- miga de pan-->
+				<!-- miga de pan-->
 				<nav aria-label="breadcrumb">
 				  <ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
 					<li class="breadcrumb-item"><a href="index.html">Tablero</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Ver pagos</li>
+					<li class="breadcrumb-item active" aria-current="page">Registrar Pago</li>
 				  </ol>
 				</nav>
 			
 				<hr>
 				
-				<h1> Tabla de Pagos </h1>
+				<h1> Registrar Pago </h1>
 				
 				<hr>
 				
+					<div id="formulario1">
 				
-				<table id="example" class="cell-border" style="width:100%">
-        <thead>
-            <tr>
-                <th>#/th>
-                <th>Fecha </th>
-                <th>Cliente</th>
-                <th>Vendedor</th>
-                <th>Tipo de Servicio</th>
-                <th>Transacción</th>
-				 <th>Forma de Pago</th>
-                <th>Total</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-		
-        <tbody>
-            <tr>
-							<th scope="row">1</th>
-							<td>15/03/2019</td>
-							<td>Eduardo Santos</td>					
-							<td>Edwin Acosta</td>
-							<td>Infantil</td>
-							<td>Cancelado</td>						
-							<td>Efectivo</td>
-							<td>$130.000</td>
-							<td> 
+							<form class="needs-validation" novalidate>
+							
+								<div class="form-row">							
+									<div class="col-md-2 mb-3">
+										<label for="validationCustom01"> <strong> Codigo </strong> </label>
+										<input type="text" class="form-control" id="validationCustom01" value="" placeholder="#" required>
+										<div class="valid-feedback">
+											Excelente!
+										</div>
+									</div>
+								</div>	
 								
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">2</th>
-							<td>17/03/2019</td>
-							<td>Camila Castro</td>					
-							<td>Emanuel Chavez</td>
-							<td>Empresarial</td>
-							<td>Cancelar</td>						
-							<td>Credito</td>
-							<td>$75.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">3</th>
-							<td>04/04/2019</td>
-							<td>Armando Escobar</td>					
-							<td>Edwin Acosta</td>
-							<td>Empresarial</td>
-							<td>Cancelado</td>						
-							<td>Efectivo</td>
-							<td>$75.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-                <th scope="row">4</th>
-							<td>10/04/2019</td>
-							<td>Carlos Mendez</td>					
-							<td>Emanuel Chavez</td>
-							<td>Infantil</td>
-							<td>Cancelado</td>						
-							<td>Credito</td>
-							<td>$65.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">5</th>
-							<td>16/04/2019</td>
-							<td>Valery Cifuentes</td>					
-							<td>Edwin Acosta</td>
-							<td>Personalizada</td>
-							<td>Cancelar</td>						
-							<td>Efectivo</td>
-							<td>$165.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">6</th>
-							<td>16/04/2019</td>
-							<td>Jessica Bohorquez</td>					
-							<td>Emanuel Chavez</td>
-							<td>Empresarial</td>
-							<td>Cancelado</td>						
-							<td>Credito</td>
-							<td>$65.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">7</th>
-							<td>20/05/2019</td>
-							<td>Fernando Cardenas</td>					
-							<td>Edwin Acosta</td>
-							<td>Empresarial</td>
-							<td>Cancelar</td>						
-							<td>Credito</td>
-							<td>$75.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">8</th>
-							<td>02/06/2019</td>
-							<td>Erney Grisales</td>					
-							<td>Emanuel Chavez</td>
-							<td>Infantil</td>
-							<td>Cancelado</td>						
-							<td>Credito</td>
-							<td>$85.000</td>
-							<td> 
 								
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
+								<div class="form-row">	
+									<div class="col-md-2 mb-3">
+										<label for="validationCustom02"> <b> Fecha </b> </label>
+										<input type="text" class="form-control" id="validationCustom02" value="" placeholder="Día/Mes/Año" required>
+										<div class="valid-feedback">
+											Excelente!
+										</div>
+									</div>
+								</div>
+
+								
+								<div class="form-row">	
+									<div class="col-md-4 mb-3">
+										<label for="validationCustom02"> <b> Cliente </b> </label>
+										<input type="text" class="form-control" id="validationCustom02" value="" placeholder="Nombre" required>
+										<div class="valid-feedback">
+											Excelente!
+										</div>
+									</div>
+								</div>	
+									
+								
+								<div class="form-row">
+									<div class="col-md-4 mb-3">
+										<label for="validationCustom02"> <b> Vendedor </b> </label>
+										<input type="text" class="form-control" id="validationCustom02" value="" placeholder="Nombre" required>
+										<div class="valid-feedback">
+											Excelente!
+										</div>
+									</div>	
+								</div>
+								
+								
+								<div class="form-row">
+									<div class="col-md-3 mb-3">
+										<label for="validationCustom04"><b> Tipo de Servicio </b></label>
+										<select class="custom-select" id="validationCustom04" required>
+										<option selected disabled value=""> <b> Evento... </b> </option>
+										<option> <b> Infantil </b> </option>
+										<option> <b> Empresarial </b> </option>
+										<option> <b> Personalizada </b> </option>
+										</select>
+										<div class="invalid-feedback">								
+											Por favor seleccione un estado válido.
+										</div>
+									</div>
+								</div>	
+									
+									
+								<div class="form-row">	
+									<div class="col-md-3 mb-3">
+										<label for="validationCustom04"> <b> Transacción </b> </label>
+										<select class="custom-select" id="validationCustom04" required>
+										<option selected disabled value=""> <b> Estado... </b> </option>
+										<option> <b> Cancelado </b> </option>
+										<option> <b> Cancelar </b> </option>
+										</select>
+										<div class="invalid-feedback">								
+											Por favor seleccione un estado válido.
+										</div>
+									</div>
+								</div>		
+									
+
+								<div class="form-row">
+									<div class="col-md-3 mb-3">
+										<label for="validationCustom04"> <b> Forma de Pago </b> </label>
+										<select class="custom-select" id="validationCustom04" required>
+										<option selected disabled value=""> <b> Modo... </b> </option>
+										<option> <b> Efectivo </b> </option>
+										<option> <b> Credito </b> </option>
+										</select>
+										<div class="invalid-feedback">								
+											Por favor seleccione un estado válido.
+										</div>
+									</div>
+								</div>	
+									
+								
+								<div class="form-row">
+									<div class="col-md-3 mb-3">
+										<label for="validationCustom02"> <b> Total </b> </label>
+										<input type="text" class="form-control" id="validationCustom02" value="$" placeholder="$$$" required>
+										<div class="valid-feedback">
+											✔ ✔ ✔ 
+										</div>
+									</div>
+										
+								</div>	
+									
+												  
+												  
+								<div class="form-group">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+										<label class="form-check-label" for="invalidCheck">
+											Aceptar Terminos y Condiciones 
+										</label>
+										<div class="invalid-feedback">	
+											Debe aceptar antes de enviar.
+										</div>
+									</div>
+								</div>
+								
+								
+								<button class="btn btn-primary" type="submit">Regenerar Pago</button>
+							</form>
+				
+					</div>
+				
+				
+				
+	
+				
 			
-            <tr>
-							<th scope="row">9</th>
-							<td>25/06/2019</td>
-							<td>Jorge Loaiza</td>					
-							<td>Edwin Acosta</td>
-							<td>Empresarial</td>
-							<td>Cancelar</td>						
-							<td>Credito</td>
-							<td>$65.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-			
-                <th scope="row">10</th>
-							<td>27/07/2019</td>
-							<td>Jhocsan Estupiñan</td>					
-							<td>Emanuel Chavez</td>
-							<td>Empresarial</td>
-							<td>Cancelado</td>						
-							<td>Efectivo</td>
-							<td>$100.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-           
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>#</th>
-                <th>Fecha</th>
-                <th>Cliente</th>
-                <th>Vendedor</th>
-                <th>Tipo de Servicio</th>
-                <th>Transacción</th>
-				<th>Forma de Pago</th>
-                <th>Total</th>
-                <th>Acciones</th>
-            </tr>
-        </tfoot>
-    </table>
-	
-	<br>
-	
-	<button class="btn btn-primary" type="submit">Orden de Pago</button>
-	
-	<br>
-	
-	<br>
-	
-	<br>
-	
-	
-	
-	<!-- botón porcentaje -->
-		<a <button class="btn btn-primary" type="submit" href="grafico1.html">Porcentaje Porcentual</button></a>
 		
-	
-				
-				
-				
-				
-				
-			
-			
-			
-			
 
 		</div>
 
-          </div>
 
 
           </div>
-
+          <hr>
+ 
           
-
-          <hr>
-          <hr>
-         
-
+	</div>
 
     </div>
-	
-	
 
     <!-- End of Content Wrapper -->
 
@@ -586,7 +516,8 @@
       </div>
     </div>
   </div>
-
+  
+ 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -603,23 +534,6 @@
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
-
-
-	<!-- link script datatable tablas-->
-	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
-	
-	<!-- link script anidacion enlazado con archivo js, tablas de datattable-->
-	<script src="js/tablapagosdt.js"> </script>
-	
-	<!-- link script anidacion enlazado con archivo js, tablas-->
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-	
-	
-	
-
-
-	
-	
 
 </body>
 

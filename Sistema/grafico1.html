@@ -17,12 +17,6 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-  
-   <!-- link css anidacion enlazado con datatable css-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css"/>
-   
-   
-   
 
 </head>
 
@@ -268,20 +262,20 @@
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                perfil
+                  Profile
                 </a>
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                Ajuste
+                  Settings
                 </a>
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-
+                  Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                Salir
+                  Logout
                 </a>
               </div>
             </li>
@@ -292,8 +286,9 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content Programe aqui su sistema -->
+        <div class="container-fluid">
 
-		<!-- miga de pan-->
+			<!-- miga de pan-->
 				<nav aria-label="breadcrumb">
 				  <ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
@@ -304,260 +299,14 @@
 			
 				<hr>
 				
-				<h1> Tabla de Pagos </h1>
+				<h1> Porcentaje Ovalo </h1>
 				
 				<hr>
 				
-				
-				<table id="example" class="cell-border" style="width:100%">
-        <thead>
-            <tr>
-                <th>#/th>
-                <th>Fecha </th>
-                <th>Cliente</th>
-                <th>Vendedor</th>
-                <th>Tipo de Servicio</th>
-                <th>Transacción</th>
-				 <th>Forma de Pago</th>
-                <th>Total</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
+			
 		
-        <tbody>
-            <tr>
-							<th scope="row">1</th>
-							<td>15/03/2019</td>
-							<td>Eduardo Santos</td>					
-							<td>Edwin Acosta</td>
-							<td>Infantil</td>
-							<td>Cancelado</td>						
-							<td>Efectivo</td>
-							<td>$130.000</td>
-							<td> 
-								
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">2</th>
-							<td>17/03/2019</td>
-							<td>Camila Castro</td>					
-							<td>Emanuel Chavez</td>
-							<td>Empresarial</td>
-							<td>Cancelar</td>						
-							<td>Credito</td>
-							<td>$75.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">3</th>
-							<td>04/04/2019</td>
-							<td>Armando Escobar</td>					
-							<td>Edwin Acosta</td>
-							<td>Empresarial</td>
-							<td>Cancelado</td>						
-							<td>Efectivo</td>
-							<td>$75.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-                <th scope="row">4</th>
-							<td>10/04/2019</td>
-							<td>Carlos Mendez</td>					
-							<td>Emanuel Chavez</td>
-							<td>Infantil</td>
-							<td>Cancelado</td>						
-							<td>Credito</td>
-							<td>$65.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">5</th>
-							<td>16/04/2019</td>
-							<td>Valery Cifuentes</td>					
-							<td>Edwin Acosta</td>
-							<td>Personalizada</td>
-							<td>Cancelar</td>						
-							<td>Efectivo</td>
-							<td>$165.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">6</th>
-							<td>16/04/2019</td>
-							<td>Jessica Bohorquez</td>					
-							<td>Emanuel Chavez</td>
-							<td>Empresarial</td>
-							<td>Cancelado</td>						
-							<td>Credito</td>
-							<td>$65.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">7</th>
-							<td>20/05/2019</td>
-							<td>Fernando Cardenas</td>					
-							<td>Edwin Acosta</td>
-							<td>Empresarial</td>
-							<td>Cancelar</td>						
-							<td>Credito</td>
-							<td>$75.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">8</th>
-							<td>02/06/2019</td>
-							<td>Erney Grisales</td>					
-							<td>Emanuel Chavez</td>
-							<td>Infantil</td>
-							<td>Cancelado</td>						
-							<td>Credito</td>
-							<td>$85.000</td>
-							<td> 
-								
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-							<th scope="row">9</th>
-							<td>25/06/2019</td>
-							<td>Jorge Loaiza</td>					
-							<td>Edwin Acosta</td>
-							<td>Empresarial</td>
-							<td>Cancelar</td>						
-							<td>Credito</td>
-							<td>$65.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-			
-            <tr>
-			
-                <th scope="row">10</th>
-							<td>27/07/2019</td>
-							<td>Jhocsan Estupiñan</td>					
-							<td>Emanuel Chavez</td>
-							<td>Empresarial</td>
-							<td>Cancelado</td>						
-							<td>Efectivo</td>
-							<td>$100.000</td>
-							<td> 
-								<input type="checkbox">
-								<input type="image" src="img/chulo1.png" width="25px" height="15px">
-								<input type="image" src="img/equis1.jpg" width="25px" height="15px">
-								<input type="image" src="img/guardar1.png" width="25px" height="15px">
-							</td>
-            </tr>
-           
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>#</th>
-                <th>Fecha</th>
-                <th>Cliente</th>
-                <th>Vendedor</th>
-                <th>Tipo de Servicio</th>
-                <th>Transacción</th>
-				<th>Forma de Pago</th>
-                <th>Total</th>
-                <th>Acciones</th>
-            </tr>
-        </tfoot>
-    </table>
-	
-	<br>
-	
-	<button class="btn btn-primary" type="submit">Orden de Pago</button>
-	
-	<br>
-	
-	<br>
-	
-	<br>
-	
-	
-	
-	<!-- botón porcentaje -->
-		<a <button class="btn btn-primary" type="submit" href="grafico1.html">Porcentaje Porcentual</button></a>
 		
-	
-				
-				
-				
-				
-				
-			
-			
-			
-			
-
-		</div>
-
-          </div>
-
-
-          </div>
-
-          
-
-          <hr>
-          <hr>
-         
-
-
-    </div>
-	
-	
-
+		
     <!-- End of Content Wrapper -->
 
   </div>
@@ -586,6 +335,10 @@
       </div>
     </div>
   </div>
+  
+  
+  <!-- es un enlazado de archivo html con archivo js sobre canvas graficos porcentajes y estadisticas  -->
+  <div id="chartContainer" style="height: 370px; width: 100%;"></div>
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -603,23 +356,14 @@
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
-
-
-	<!-- link script datatable tablas-->
-	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
-	
-	<!-- link script anidacion enlazado con archivo js, tablas de datattable-->
-	<script src="js/tablapagosdt.js"> </script>
-	
-	<!-- link script anidacion enlazado con archivo js, tablas-->
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-	
-	
-	
-
-
-	
-	
+  
+  
+   <!-- canvas sacar porcentajes y estadisticas graficas -->
+   
+   <script src="canvas/canvasjs.min.js"> </script>
+   <script src="js/grafico1.js"> </script>
+   
+  
 
 </body>
 
