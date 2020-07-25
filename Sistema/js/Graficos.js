@@ -6,7 +6,7 @@ window.onload = function() {
             theme: "light2",
             animationEnabled: true,
             title: {
-                text: "Tipos de eventos"
+                text: "Eventos agendados"
             },
             subtitles: [{
                 text: "Mensual",
