@@ -274,20 +274,20 @@
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
+                  Perfil
                 </a>
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
+                  Configuraciòn
                 </a>
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
+                  Actividad
                 </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                  Cerrar
                 </a>
               </div>
             </li>
@@ -595,9 +595,25 @@
                         <div class="invalid-feedback">Por favor selecciona una opcion</div>
                         <div class="valid-feedback">Valido</div>
                       </div>
+                      <div class="form-group ">
+                <label for="Genero">Estado</label>
+                <select class="custom-select" id="Genero" required >
+                  <option value="">Elije</option>
+                  <option>Activo</option>
+                  <option>En uso</option>
+                  <option>Alquilado</option>
+                  <option>Vendido</option>
+                  <option>Perdido</option>
+
+                </select>
+                <div class="invalid-feedback">Por favor selecciona una opcion</div>
+                <div class="valid-feedback">Valido</div>
+              </div>
                           <div class="form-group ">
-                        <label for="Birthday">Fecha de Nacimiento</label>
-                        <input type="text" class="form-control" id="Birthday" placeholder=""  required>
+                        <label for="Birthday">Fecha de compra</label>
+
+                        <input type="date" name="Fecha" step="1" min="2013-01-01" max="2013-12-31" value="201"/>
+
                         <div class="valid-feedback">Valido</div>
                         <div class="invalid-feedback">Completa el campo.</div>
                       </div>
@@ -731,6 +747,8 @@
     <script src="js/codigo.js"></script>
 
 <script src="js/popup.js"></script>
+<script>
+
 
 </body>
 
