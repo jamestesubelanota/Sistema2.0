@@ -323,9 +323,6 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content Programe aqui su sistema -->
-          <hr>
-          <h1>Registrar pagos</h1>
-          <hr>
 		  
 		<div class="container-fluid">
 
@@ -344,49 +341,56 @@
 				
 				<hr>
 				
-					<div id="formulario1">
+				<div id="formulario1">
 				
 							<form class="needs-validation" novalidate>
-								<div class="form-row">
-								
-									<div class="col-md-2 mb-3">
+							
+								<div class="form-row">							
+									<div class="col-md-12 mb-3">
 										<label for="validationCustom01"> <strong> Codigo </strong> </label>
 										<input type="text" class="form-control" id="validationCustom01" value="" placeholder="#" required>
 										<div class="valid-feedback">
 											Excelente!
 										</div>
 									</div>
-									
-									<div class="col-md-2 mb-3">
+								</div>	
+								
+								
+								<div class="form-row">	
+									<div class="col-md-12 mb-3">
 										<label for="validationCustom02"> <b> Fecha </b> </label>
-										<input type="text" class="form-control" id="validationCustom02" value="" placeholder="Día/Mes/Año" required>
+										<input type="date" class="form-control" id="validationCustom02" value="" placeholder="Día/Mes/Año" required>
 										<div class="valid-feedback">
 											Excelente!
 										</div>
 									</div>
-									
-									<div class="col-md-4 mb-3">
+								</div>
+
+								
+								<div class="form-row">	
+									<div class="col-md-12 mb-3">
 										<label for="validationCustom02"> <b> Cliente </b> </label>
 										<input type="text" class="form-control" id="validationCustom02" value="" placeholder="Nombre" required>
 										<div class="valid-feedback">
 											Excelente!
 										</div>
 									</div>
+								</div>	
 									
-									<div class="col-md-4 mb-3">
+								
+								<div class="form-row">
+									<div class="col-md-12 mb-3">
 										<label for="validationCustom02"> <b> Vendedor </b> </label>
 										<input type="text" class="form-control" id="validationCustom02" value="" placeholder="Nombre" required>
 										<div class="valid-feedback">
 											Excelente!
 										</div>
-									</div>
-									
+									</div>	
 								</div>
 								
 								
 								<div class="form-row">
-								
-									<div class="col-md-3 mb-3">
+									<div class="col-md-12 mb-3">
 										<label for="validationCustom04"><b> Tipo de Servicio </b></label>
 										<select class="custom-select" id="validationCustom04" required>
 										<option selected disabled value=""> <b> Evento... </b> </option>
@@ -398,8 +402,11 @@
 											Por favor seleccione un estado válido.
 										</div>
 									</div>
+								</div>	
 									
-									<div class="col-md-3 mb-3">
+									
+								<div class="form-row">	
+									<div class="col-md-12 mb-3">
 										<label for="validationCustom04"> <b> Transacción </b> </label>
 										<select class="custom-select" id="validationCustom04" required>
 										<option selected disabled value=""> <b> Estado... </b> </option>
@@ -410,8 +417,11 @@
 											Por favor seleccione un estado válido.
 										</div>
 									</div>
+								</div>		
+									
 
-									<div class="col-md-3 mb-3">
+								<div class="form-row">
+									<div class="col-md-12 mb-3">
 										<label for="validationCustom04"> <b> Forma de Pago </b> </label>
 										<select class="custom-select" id="validationCustom04" required>
 										<option selected disabled value=""> <b> Modo... </b> </option>
@@ -422,10 +432,13 @@
 											Por favor seleccione un estado válido.
 										</div>
 									</div>
+								</div>	
 									
-									<div class="col-md-3 mb-3">
+								
+								<div class="form-row">
+									<div class="col-md-12 mb-3">
 										<label for="validationCustom02"> <b> Total </b> </label>
-										<input type="text" class="form-control" id="validationCustom02" value="" placeholder="$$$" required>
+										<input type="text" class="form-control" id="validationCustom02" value="$" placeholder="$$$" required>
 										<div class="valid-feedback">
 											✔ ✔ ✔ 
 										</div>
@@ -445,15 +458,14 @@
 											Debe aceptar antes de enviar.
 										</div>
 									</div>
-								</div>
-								<button class="btn btn-primary" type="submit">Añadir a Pagos</button>
-							</form>
+								</div>	
 				
-					</div>
+								<br>
+								<br>
 				
-				
-				
+								<a <button class="btn btn-primary" type="submit" href="ver_pagos.html">Añadir Pago</button></a>
 	
+				
 				
 			
 		
