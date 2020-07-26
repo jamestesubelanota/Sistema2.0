@@ -1,8 +1,6 @@
+
 Swal.fire({
-  title: "Bienvenido Leonardo!"
-});
-Swal.fire({
-  position: 'top-end',
+  position: 'center',
   icon: 'success',
   title: 'Cargo Correctamente',
   showConfirmButton: false,
