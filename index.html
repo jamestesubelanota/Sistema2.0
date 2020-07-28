@@ -39,6 +39,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Galeria</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contáctenos</a></li>
                           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Sistema/login.html">Sistema</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -54,6 +55,9 @@
                     <div class="col-lg-8 align-self-baseline">
                         <h3 class="text-white-75 font-weight-light mb-5">Te ayudamos a realizar los eventos que tanto deseas compartir con tus seres queridos  </h3>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Mas sobre nosotros</a>
+                        <button type="button" class="btn btn-primary btn-xl js-scroll-trigger " data-toggle="modal" data-target="#staticBackdrop">
+                        precio y servicios
+                        </button>
                     </div>
                 </div>
             </div>
@@ -108,9 +112,7 @@
                 </div>
             </div>
             <!-- Button trigger modal -->
-          <button type="button" class=" btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#staticBackdrop">
-          precio y servicios
-          </button>
+
 
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -331,67 +333,38 @@
 
         <!-- Contact-->
         <section class="page-section" id="contact">
-          <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="well well-sm">
-                <form class="form-horizontal" method="post">
-                    <fieldset>
-                        <legend class="text-center header">Contactanos </legend>
-<div class="form_mensaje">
-
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                              <label for=""> Nombre</label>
-                                <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                              <label for="">Segundo nombre</label>
-                                <input id="lname" name="name" type="text" placeholder="Segundo nombre" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                            <div class="col-md-8">
-                              <label for="">Correo</label>
-                                <input id="email" name="email" type="text" placeholder="Correo electonico" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                            <div class="col-md-8">
-                              <label for="">Telefono</label>
-                                <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                            <div class="col-md-8">
-                              <label for="">Mensaje</label>
-                                <textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje aqui" rows="7"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                            </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
+        <div class="Container text-center border ">
+          <div class="row">
+            <div class="container col-md-6  border align-self-baseline">
+              <form onsubmit="return validar();" >
+                <h2>Contactenós</h2>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Nombre </label>
+    <input type="text" class="form-control" id="Nombre_contacto" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Apellido</label>
+    <input type="text" class="form-control" id="Apellido_contacto" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Correo</label>
+    <input type="email" class="form-control" id="Correo_contacto" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">mensaje</label>
+    <textarea  id="Mensaje_contacto"class="form-control" rows="3"></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Enviar</button>
+</form>
             </div>
+            <div class="container col-md-6">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7953.615520723227!2d-74.14349435879073!3d4.628360225512099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6030d5f34720022a!2sFIESTAS%20INFANTILES%20CHIA%20RECREADORES%2C%20RECREACIONISTAS%20CHISPITAS%20M%C3%81GICAS%20CHIA%20R.!5e0!3m2!1ses!2sco!4v1595967920795!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+
         </div>
-    </div>
-</div>
+
+
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
@@ -412,4 +385,7 @@
 
     </script>
 <script src="Sistema/DataTable/datatables.min.js"></script>
+<script src="js/validacion_index.js" >
+
+</script>
 </html>
