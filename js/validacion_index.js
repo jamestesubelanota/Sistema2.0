@@ -4,7 +4,8 @@ function validar(){
     apellido = document.getElementById("Apellido_contacto").value;
     correo = document.getElementById("Correo_contacto").value;
     mensaje = document.getElementById("Mensaje_contacto").value;
-    expresion = (/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/);
+    expresion = /\w+@\w+\.+[a-z]/;
+
 
       if(nombre === "" || apellido === "" || correo === "" || mensaje === ""){
       alert("todos los campos son obligarotios");
@@ -22,7 +23,7 @@ else if (correo.length>100){
   alert("El  correo es muy largo");
 return false;
 }
- if(!(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/).tets(correo)){
+ else if(!expresion.tets(correo)){
   alert("El  correo no es valido");
   return false;
 }

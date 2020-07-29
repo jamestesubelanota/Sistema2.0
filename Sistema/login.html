@@ -39,14 +39,14 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Bienvenidos al sistema chispitas</h1>
                   </div>
-                  <form class="user">
+                  <form class="user" onsubmit="return validar();"  >
                     <div class="form-group">
                       <label for="">Correo electronico</label>
-                      <input required maxlength="30"  type="email" class="form-control form-control-user" id="loginEmail" aria-describedby="emailHelp" placeholder="correo..">
+                      <input  maxlength="30"  type="email" class="form-control form-control-user" id="loginEmail" aria-describedby="emailHelp" placeholder="correo..">
                     </div>
                     <div class="form-group">
                       <label for="">Contraseña</label>
-                      <input required type="password" class="form-control form-control-user" id="loginPassword" placeholder="Contraseña">
+                      <input  type="password" class="form-control form-control-user" id="loginPassword" placeholder="Contraseña">
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
@@ -54,7 +54,7 @@
 
                       </div>
                     </div>
-                <button   class="btn btn-primary btn-user btn-block" type="submit" name="button"> <a href="index.html">iniciar</a> </button>
+                <button   class="btn btn-enviar btn-primary btn-user btn-block" type="submit" name="button"><a href="index.html">Iniciar</a> </button>
                     <hr>
 
                   </form>
