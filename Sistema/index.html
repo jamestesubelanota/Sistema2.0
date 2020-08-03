@@ -105,7 +105,7 @@
           <div class="bg-white py-2 collapse-inner rounded">
 
             <a class="collapse-item" href="Registrar_pago.html">Registrar pago</a>
-          
+
           </div>
         </div>
       </li>
@@ -285,16 +285,136 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content Programe aqui su sistema -->
-        <div id="chartContainer1" style="height: 370px; width: 50%;"></div>
-        <div id="chartContainer" style="height: 370px; width: 40%;position: absolute;right: 0px;top: 94px;"></div>
-        <div id="chartContainer2" style="height: 370px; width: 85%;position: absolute; top: 500px;"></div>
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-0 text-gray-800"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bienvenidos al sistema</font></font></h1>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Generar informe</font></font></a>
+                  </div>
+        <div class="row">
 
+          <!-- Earnings (Monthly) Card Example -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">NUmero de cotizaciones</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">100</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Earnings (Monthly) Card Example -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Pagos registrados</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">25</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Earnings (Monthly) Card Example -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Cantidad de objetos en el inventario</div>
+                    <div class="row no-gutters align-items-center">
+                      <div class="col-auto">
+                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">60</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm mr-2">
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pending Requests Card Example -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">personal registrado</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-comments fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
+      <h2>Aqui puedes hacer el seguimieto</h2>
+    <div class="col-xl-4 col-lg-5">
+      <div class="card shadow mb-4">
+<div class="row">
+
+
+
+        <!-- Card Header - Dropdown -->
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+          <h6 class="m-0 font-weight-bold text-primary">Canridad de ingresos</h6>
+          <div class="dropdown no-arrow">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-header">herramientas:</div>
+              <a class="dropdown-item" href="#">reporte</a>
+
+            </div>
+          </div>
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+          <div class="chart-pie pt-4 pb-2">
+            <canvas id="myPieChart"></canvas>
+          </div>
+          <div class="mt-4 text-center small">
+            <span class="mr-2">
+              <i class="fas fa-circle text-primary"></i> cotizaciones
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle text-success"></i> pagos registrados
+            </span>
+            <span class="mr-2">
+              <i class="fas fa-circle text-info"></i> inventario
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- End of Content Wrapper -->
 
   </div>
+
   <!-- End of Page Wrapper -->
 
   <!-- Scroll to Top Button-->
