@@ -7,20 +7,20 @@ Swal.fire({
   timer: 1500
 })
 
-function showAlert(){
+$("#btn1").click(function(){
   Swal.fire({
-      title: '¿seguro que quieres guardar los cambios?',
-      text: "No podras modificar sin los permisos necesarios",
+      title: '¿seguro que quieres eliminarlo?',
+      text: "No podras revertirlo",
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Si, por favor'
     }).then((result) => {
-      if (result.value > Submit) {
+      if (result.value) {
         Swal.fire(
           'Hecho',
-          'Se han guardado los cambios',
+          'se ha eliminado satisfactoriamente',
           'success'
         )
       } else {
@@ -31,4 +31,154 @@ function showAlert(){
       }
     })
       
-};
+});
+$("#btn2").click(function(){
+  Swal.fire({
+      title: '¿seguro que quieres eliminarlo?',
+      text: "No podras revertirlo",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, por favor'
+    }).then((result) => {
+      if (result.value) {
+        Swal.fire(
+          'Hecho',
+          'se ha eliminado satisfactoriamente',
+          'success'
+        )
+      } else {
+
+          //additional run on cancel  functions can be done hear
+
+        
+      }
+    })
+      
+});
+$("#btn3").click(function(){
+  Swal.fire({
+      title: '¿seguro que quieres eliminarlo?',
+      text: "No podras revertirlo",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, por favor'
+    }).then((result) => {
+      if (result.value) {
+        Swal.fire(
+          'Hecho',
+          'se ha eliminado satisfactoriamente',
+          'success'
+        )
+      } else {
+
+          //additional run on cancel  functions can be done hear
+
+        
+      }
+    })
+      
+});
+$("#btn4").click(function(){
+  Swal.fire({
+      title: '¿seguro que quieres eliminarlo?',
+      text: "No podras revertirlo",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, por favor'
+    }).then((result) => {
+      if (result.value) {
+        Swal.fire(
+          'Hecho',
+          'se ha eliminado satisfactoriamente',
+          'success'
+        )
+      } else {
+
+          //additional run on cancel  functions can be done hear
+
+        
+      }
+    })
+      
+});
+$("#btn5").click(function(){
+  Swal.fire({
+      title: '¿seguro que quieres eliminarlo?',
+      text: "No podras revertirlo",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, por favor'
+    }).then((result) => {
+      if (result.value) {
+        Swal.fire(
+          'Hecho',
+          'se ha eliminado satisfactoriamente',
+          'success'
+        )
+      } else {
+
+          //additional run on cancel  functions can be done hear
+
+        
+      }
+    })
+      
+});
+$("#btn6").click(function(){
+  Swal.fire({
+      title: '¿seguro que quieres eliminarlo?',
+      text: "No podras revertirlo",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, por favor'
+    }).then((result) => {
+      if (result.value) {
+        Swal.fire(
+          'Hecho',
+          'se ha eliminado satisfactoriamente',
+          'success'
+        )
+      } else {
+
+          //additional run on cancel  functions can be done hear
+
+        
+      }
+    })
+      
+});
+$("#btn7").click(function(){
+  Swal.fire({
+      title: '¿seguro que quieres eliminarlo?',
+      text: "No podras revertirlo",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si, por favor'
+    }).then((result) => {
+      if (result.value) {
+        Swal.fire(
+          'Hecho',
+          'se ha eliminado satisfactoriamente',
+          'success'
+        )
+      } else {
+
+          //additional run on cancel  functions can be done hear
+
+        
+      }
+    })
+      
+});
