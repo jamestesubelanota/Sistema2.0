@@ -314,7 +314,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form  action="" onsubmit="return validarFormulario()">
+        <form id="boton" method="post" action="" onsubmit="return validarFormulario()">
            <div class="form-group ">
              <label for="nombre">Nombres</label>
              <input type="text" class="form-control" name="nombre" id="nombre" placeholder=""  required>
@@ -383,8 +383,8 @@
              <input type="date" class="form-control" id="fecha" placeholder=""  required>
              
            </div>
-           <button type="submit" value="Submit" class="btn btn-primary" >Agregar</button>
-           <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+           <button type="submit" id="btn-submit" class="btn btn-primary" >Agregar</button>
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
          </div>
          </div>
          </form>
