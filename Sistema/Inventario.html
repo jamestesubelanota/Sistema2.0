@@ -406,18 +406,12 @@
                 <div class="invalid-feedback">Por favor selecciona una opcion</div>
                 <div class="valid-feedback">Valido</div>
               </div>
-<<<<<<< HEAD
 
                 <label for="validationCustom01"></label>
                 <input type="date" class="form-control" id="validationCustom01" value="Mark" required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
-=======
-                          <div class="form-group ">
-                            <label for="Number2">fecha de compra</label>
-                            <input type="date" class="form-control" id="fecha" placeholder=" "/>
->>>>>>> 8db6675d34073dd0c36c962cee022b2d536089b2
 
                         <div class="valid-feedback">Valido</div>
                         <div class="invalid-feedback">Completa el campo.</div>
@@ -432,7 +426,7 @@
 </div>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
 
-                     <button onclick="myFunction()" class="btn btn-primary">Agregar Material</button>
+                    <button onclick="alerta()" class="btn btn-primary">Agregar Material</button>
 
                     </div>
                     </div>
@@ -800,9 +794,17 @@
     </script>
 
     <script>
-    function myFunction() {
-      alert("Completaste Todos los campos?");
-    }
+    function alerta()
+      {
+      var mensaje;
+      var opcion = confirm("Clicka en Aceptar o Cancelar");
+      if (opcion == true) {
+          mensaje = "Has clickado OK";
+  	} else {
+  	    mensaje = "Has clickado Cancelar";
+  	}
+  	document.getElementById("ejemplo").innerHTML = mensaje;
+  }
     </script>
 
 
