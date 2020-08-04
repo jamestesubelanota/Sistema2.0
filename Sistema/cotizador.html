@@ -390,29 +390,29 @@
         <form>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Nombre:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input required type="text" class="form-control" id="recipient-name">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Apellido:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input required type="text" class="form-control" id="recipient-name">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Dirección:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input  required type="text" class="form-control" id="recipient-name">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Correo:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input required type="text" class="form-control" id="recipient-name">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Telefono:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input  required type="text" class="form-control" id="recipient-name">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Actividad economica:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input required type="text" class="form-control" id="recipient-name">
           </div>
-        </form>
+
       </div>
       <div class="alert alert-warning alert-dismissable">
 <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -421,8 +421,10 @@
       <div class="modal-footer">
 
         <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
-          <button type="button" class="btn btn-primary">Agregar Cliente</button>
+          <button type="submit" class="btn btn-primary">Agregar Cliente</button>
+
       </div>
+        </form>
     </div>
   </div>
 </div>
@@ -441,16 +443,16 @@
         <form>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Nombre Evento:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input required type="text" class="form-control" id="recipient-name">
           </div>
 
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Descripcion :</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input  required type="text" class="form-control" id="recipient-name">
           </div>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Estado:</label>
-          <select class="form-control" name="">
+          <select required class="form-control" name="">
             <option value="">ACTIVO</option>
               <option value="">Inactivo</option>
           </select>
@@ -460,10 +462,10 @@
 
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Precio:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input required type="text" class="form-control" id="recipient-name">
           </div>
 
-        </form>
+
       </div>
       <div class="alert alert-warning alert-dismissable">
 <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -471,8 +473,9 @@
 </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary" >Agregar Evento</button>
+        <button type="submit" class="btn btn-primary" >Agregar Evento</button>
       </div>
+        </form>
     </div>
   </div>
 </div><!-- Button trigger modal -->
@@ -540,7 +543,7 @@
 
                                 <td><button  class="btn btn-primary"type="button" name="button"> selecionar</button></td>
                             </tr>
-                          
+
 
 
                         </tfoot>
