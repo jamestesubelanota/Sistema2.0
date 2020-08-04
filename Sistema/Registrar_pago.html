@@ -346,56 +346,73 @@
         <h1>Registrar pagos</h1>
 <hr>
 			<!--Aqui empieza el sistema-->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_pago" data-whatever="@mdo">Ingresar pagos</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_inventario" data-whatever="@mdo">Ingresar pagos</button>
     <hr>
-    <div class="modal fade" id="modal_pago" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal_inventario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Agregar cliente</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Agregar </h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Nombre:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Apellido:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Dirección:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Correo:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Telefono:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Actividad economica:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
+            <form id="boton" method="post" action="" onsubmit="return validarFormulario1()">
+               <div class="form-group ">
+                 <label for="nombre">Nombre cliente</label>
+                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder=""  required>
+               </div>
+               <div class="form-group ">
+                 <label for="selector">Identificacio del cliente</label>
+                 <select class="custom-select" id="selector" required >
+                   <option selected disabled value="">Elije</option>
+                   <option value="1">Cedula de ciudadania</option>
+                   <option value="2">Cedula Extranjera</option>
+                 </select>
+               </div>
+               <div class="form-group ">
+                 <label for="numero2">Numero de identificaion</label>
+                 <input type="text" class="form-control" id="numero2" name="numero2" placeholder=""  required>
+                </div>
+                   <div class="form-group ">
+                 <label for="selector">Evento vendido</label>
+                 <select class="custom-select" id="selector" required >
+                   <option value="">Elije</option>
+                   <option value="1">Infantil</option>
+                   <option value="2">Empresarial</option>
+                 </select>
+               </div>
+                       <div class="form-group ">
+                 <label for="selector">Personal encargado</label>
+                 <select class="custom-select" id="selector" required >
+                   <option value="">Elije</option>
+                   <option value="1">Camilo</option>
+                   <option value="2">Andres</option>
+                   <option value="3">Luisa</option>
+                 </select>
+               </div>
+                   <div class="form-group ">
+                 <label for="numero">valor total</label>
+                 <input type="number" class="form-control" id="numero" name="numero" placeholder=""  required>
+    
+               </div>
+               <div class="alert alert-warning alert-dismissable">
+     <button type="button" class="close" data-dismiss="alert">&times;</button>
+     <strong>¡Recuerde!</strong> Complete Todos los campos de datos.
+     </div>
+                 <button type="submit" class="btn btn-primary" >Agregar Personal</button>
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+    
+             </div>
+             </div>
             </form>
-          </div>
-          <div class="alert alert-warning alert-dismissable">
-<button type="button" class="close" data-dismiss="alert">&times;</button>
-<strong>¡Recuerde!</strong> Complete Todos los campos de datos.
-</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alaertEvento" data-whatever="@mdo">Agregar Pago</button>
+    
           </div>
         </div>
       </div>
     </div>
+
       <!--aqui sigue-->
       <div class="container">
         <div class="tablas">
@@ -585,6 +602,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <script src="DataTables/main.js"></script>
   <script src="js/sweetAlert.js"></script>
+  <script src="js/vali1.js"></script>
 
 
 
