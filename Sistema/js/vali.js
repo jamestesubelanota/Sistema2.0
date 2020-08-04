@@ -47,7 +47,30 @@ function validarFormulario(){
       alert('ERROR: Debe seleccionar una opcion ');
       return false;
     }
- 
- 
-    return true;
-  }
+    $(document).on('click', '#btn-submit', function(e) { e.preventDefault(); swal({ title: 'Confirm', input: 'checkbox', inputValue: 0, inputPlaceholder: ' I agree with the Terms', confirmButtonText: 'Continue', inputValidator: function (result) { return new Promise(function (resolve, reject) { if (result) { resolve(); } else { reject('You need to agree with the Terms'); } }) } }).then(function (result) { $('#boton').submit(); }); }); 
+    Swal.fire({
+        title: '¿seguro que quieres guardar los cambios?',
+        text: "No podras modificar sin los permisos necesarios",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si, por favor'
+      }).then((result) => {
+        if (result.value) {
+          Swal.fire(
+            'Hecho',
+            'Se han guardado los cambios',
+            'success'
+          )
+          form.submit();
+        } else {
+
+            return false;
+
+          
+        }
+      })
+        
+};
+   

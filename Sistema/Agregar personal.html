@@ -314,7 +314,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form  action="" onsubmit="return validarFormulario()">
+        <form id="boton" method="post" action="" onsubmit="return validarFormulario()">
            <div class="form-group ">
              <label for="nombre">Nombres</label>
              <input type="text" class="form-control" name="nombre" id="nombre" placeholder=""  required>
@@ -326,23 +326,23 @@
          <div class="form-group">
            <label for="nombre">Direccion</label>
            <input type="text" class="form-control" name="nombre" id="nombre" placeholder=""  required>
-             
+
          </div>
            <div class="form-group ">
              <label for="numero">Telefono 1</label>
              <input type="text" class="form-control" name="numero" id="numero" placeholder="" required>
-             
+
            </div>
            <div class="form-group ">
              <label for="numero1">Telefono 2</label>
              <input type="text" class="form-control" name="numero1" id="numero1" placeholder=""  required>
-             
+
            </div>
 
            <div class="form-group ">
              <label for="correo">Correo Electronico</label>
              <input type="text" class="form-control" name="correo" id="correo" placeholder=""  required>
-             
+
            </div>
            <div class="form-group ">
              <label for="selector">Tipo de indentificacion</label>
@@ -351,12 +351,12 @@
                <option value="1">Cedula de ciudadania</option>
                <option value="2">Cedula Extranjera</option>
              </select>
-             
+
            </div>
            <div class="form-group ">
              <label for="numero2">Numero</label>
              <input type="text" class="form-control" id="numero2" name="numero2" placeholder=""  required>
-             
+
            </div>
                <div class="form-group ">
              <label for="selector">Cargo</label>
@@ -366,7 +366,7 @@
                <option value="2">Recreador</option>
                <option value="3">Secretaria</option>
              </select>
-             
+
            </div>
                    <div class="form-group ">
              <label for="selector">Genero</label>
@@ -376,19 +376,21 @@
                <option value="2">Mujer</option>
                <option value="3">Otro</option>
              </select>
-            
+
            </div>
                <div class="form-group ">
              <label for="fecha">Fecha de Nacimiento</label>
              <input type="date" class="form-control" id="fecha" placeholder=""  required>
-             
+
            </div>
-           <button type="submit" value="Submit" class="btn btn-primary" >Agregar</button>
-           <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+
+           <button type="submit" id="btn-submit" class="btn btn-primary" >Agregar</button>
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
          </div>
          </div>
          </form>
-         
+
       </div>
       <div class="modal-footer">
 
@@ -773,7 +775,7 @@
   <script src="js/sweetAlert.js"></script>
   <script src="js/vali.js"></script>
 
-    
+
 
 
 </body>
