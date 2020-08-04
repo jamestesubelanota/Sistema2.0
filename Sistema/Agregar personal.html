@@ -387,7 +387,7 @@
  <button type="button" class="close" data-dismiss="alert">&times;</button>
  <strong>¡Recuerde!</strong> Complete Todos los campos de datos.
  </div>
-           <button type="submit" id="btn-submit" class="btn btn-primary" >Agregar</button>
+             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alaertEvento" data-whatever="@mdo">Agregar Personal</button>
            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
          </div>
@@ -419,6 +419,7 @@
                   <th>Identificacion</th>
                   <th>Cargo</th>
                 <th></th>
+                <th></th>
               </tr>
           </thead>
           <tbody>
@@ -430,7 +431,7 @@
                   <td>cami321.18@gmail.com</td>
                   <td>C.C 1000595376</td>
                   <td>Recreacionista</td>
-                  <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td>
+                    <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td> <td> <button class="btn btn-primary" type="button" name="button"> Editar</button> </td>
               </tr>
               <tr>
                 <td>Camilo</td>
@@ -440,7 +441,7 @@
                 <td>cami321.18@gmail.com</td>
                 <td>C.C 1000595376</td>
                 <td>Recreacionista</td>
-                <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td>
+                  <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td> <td> <button class="btn btn-primary" type="button" name="button"> Editar</button> </td>
             </tr>
             <tr>
               <td>Camilo</td>
@@ -450,7 +451,7 @@
               <td>cami321.18@gmail.com</td>
               <td>C.C 1000595376</td>
               <td>Recreacionista</td>
-            <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td>
+            <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td> <td> <button class="btn btn-primary" type="button" name="button"> Editar</button> </td>
           </tr>
           <tr>
             <td>Camilo</td>
@@ -460,7 +461,7 @@
             <td>cami321.18@gmail.com</td>
             <td>C.C 1000595376</td>
             <td>Recreacionista</td>
-            <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td>
+              <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td> <td> <button class="btn btn-primary" type="button" name="button"> Editar</button> </td>
         </tr>
         <tr>
           <td>Camilo</td>
@@ -470,7 +471,7 @@
           <td>cami321.18@gmail.com</td>
           <td>C.C 1000595376</td>
           <td>Recreacionista</td>
-        <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td>
+        <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td> <td> <button class="btn btn-primary" type="button" name="button"> Editar</button> </td>
         </tr>
         <tr>
           <td>Camilo</td>
@@ -480,7 +481,7 @@
           <td>cami321.18@gmail.com</td>
           <td>C.C 1000595376</td>
           <td>Recreacionista</td>
-          <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td>
+          <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td> <td> <button class="btn btn-primary" type="button" name="button"> Editar</button> </td>
         </tr>
         <tr>
           <td>Camilo</td>
@@ -490,9 +491,9 @@
           <td>cami321.18@gmail.com</td>
           <td>C.C 1000595376</td>
           <td>Recreacionista</td>
-          <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td>
+          <td> <button class="btn btn-danger" type="button" name="button"> eliminar</button> </td> <td> <button class="btn btn-primary" type="button" name="button"> Editar</button> </td>
         </tr>
-      
+
 
           </tbody>
 
@@ -531,6 +532,26 @@
 
     </div>
   </div>
+  </div>
+
+
+
+  <div class="modal fade" id="alaertEvento" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Seguro desea Guardar?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Precione guardar para guardar Material.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">volver</button>
+         <button class="btn btn-primary"type="submit" name="button">Guardar</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Bootstrap core JavaScript-->
