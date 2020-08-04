@@ -294,14 +294,14 @@
         <div class="container-fluid">
           <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Home / Interface / Inventario</li>
+          <li class="breadcrumb-item active" aria-current="page">Home / Interface / Personal</li>
           </ol>
           </nav>
 <div class="Lista_Cotizacion">
   <hr>
   <h1>Agregar personal</h1>
   <hr>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_inventario" data-whatever="@mdo">agregar</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_inventario" data-whatever="@mdo">Agregar</button>
 
 <!-- IDEA: modalform -->
 <div class="modal fade" id="modal_inventario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -383,7 +383,10 @@
              <input type="date" class="form-control" id="fecha" placeholder=""  required>
 
            </div>
-
+           <div class="alert alert-warning alert-dismissable">
+ <button type="button" class="close" data-dismiss="alert">&times;</button>
+ <strong>¡Recuerde!</strong> Complete Todos los campos de datos.
+ </div>
            <button type="submit" id="btn-submit" class="btn btn-primary" >Agregar</button>
            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
