@@ -15,5 +15,5 @@ else if (password === "" ) {
   return false;
 
 }
-
+  return true;
 }
