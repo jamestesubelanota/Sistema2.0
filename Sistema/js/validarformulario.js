@@ -1,5 +1,5 @@
 function validar(){
-var nombres, marca, accesorios, proveedor, telefono, cantidad, ubicacion, categoria, estado;
+  var nombres, marca, accesorios, proveedor, telefono, cantidad, ubicacion, categoria, estado;
   nombres = document.getElementById('nombres').value;
   marca = document.getElementById('marca').value;
   accesorios = document.getElementById('accesorios').value;
@@ -14,6 +14,9 @@ var nombres, marca, accesorios, proveedor, telefono, cantidad, ubicacion, catego
     alert("Todos los campos son onligatorios!");
     return false;
   }
-  else if()
+
+
+
+
 
 }
