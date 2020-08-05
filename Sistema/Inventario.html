@@ -308,41 +308,46 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Agregar </h5>
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Nuevo Material </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form id="boton" method="post" action="" onsubmit="return validarFormulario3()">
-          <div class="form-group ">
+        <form id="boton" method="post" class="form-register"  onsubmit="return validar();">
+          <div class="contenedor-inputs">
             <label for="nombre">Nombres</label>
-            <input type="text" class="form-control" name="nombre" id="nombre" placeholder=""  required>
+            <input type="text"  id="nombres" class="form-control" name="nombres" placeholder="Nombres" class="input-48"  required>
           </div>
           <div class="form-group ">
             <label for="nombre">Marca</label>
-            <input type="text" class="form-control" name="nombre" id="nombre" placeholder=""  required>
+            <input type="text" id="marca" class="form-control" name="marca"  placeholder="Marca" class="input-48"  required>
           </div>
         <div class="form-group">
           <label for="nombre">Accesorios</label>
-          <input type="text" class="form-control" name="nombre" id="nombre" placeholder=""  required>
+          <input type="text"  id="accesorios" class="form-control" name="accesorios" placeholder="Accesorios" class="input-100"  required>
 
         </div>
           <div class="form-group ">
-            <label for="nombre">Prooverdor</label>
-            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="" required>
+            <label for="nombre">Proveedor</label>
+            <input type="text"  id="proveedor" class="form-control" name="proveedor"  placeholder="Proveedor" class="input-80" required>
 
           </div>
           <div class="form-group ">
             <label for="numero1">Telefono</label>
-            <input type="text" class="form-control" name="numero1" id="numero1" placeholder=""  required>
+            <input type="text" id="telefono" class="form-control" name="numero1" id="telefono" placeholder="Telefono" class="input-100"  required>
+
+          </div>
+          <div class="form-group ">
+            <label for="numero2">Cantidad</label>
+            <input type="text" id="cantidad" class="form-control" name="cantidad"  placeholder="Cantidad" class="input-80"  required>
 
           </div>
 
           <div class="form-group ">
-            <label for="selector">Ubicacion</label>
-            <select class="custom-select" id="selector" required >
-              <option selected disabled value="">Elije</option>
+            <label for="selector">Ubicación</label>
+            <select class="custom-select" id="ubicacion"  required >
+              <option selected disabled value="">Seleccionar</option>
               <option value="1">Casillero 1</option>
               <option value="2">Casillero 2</option>
               <option value="3">Casillero 3</option>
@@ -351,16 +356,14 @@
 
             </select>
 
-          </div>
-          <div class="form-group ">
-            <label for="numero2">Numero</label>
-            <input type="text" class="form-control" id="numero2" name="numero2" placeholder=""  required>
+
+
 
           </div>
               <div class="form-group ">
-            <label for="selector">Cargo</label>
-            <select class="custom-select" id="selector" required >
-              <option value="">Elije</option>
+            <label for="selector">Categoria</label>
+            <select class="custom-select" id="categoria" required >
+              <option value="">Seleccionar</option>
               <option value="1">Disfraces</option>
               <option value="2">Sonido</option>
               <option value="3">Inflables</option>
@@ -368,15 +371,11 @@
             </select>
 
           </div>
-          <div class="form-group ">
-            <label for="numero2">Cantidad</label>
-            <input type="text" class="form-control" name="numero2" id="numero2" placeholder=""  required>
 
-          </div>
                   <div class="form-group ">
             <label for="selector">Estado</label>
-            <select class="custom-select" id="selector" required >
-              <option value="">Elije</option>
+            <select class="custom-select" id="Estado" required >
+              <option value="">Seleccionar</option>
               <option value="1">Activo</option>
               <option value="2">En uso</option>
               <option value="3">Alquilado</option>
@@ -573,8 +572,9 @@
   <script src="DataTables/main.js"></script>
   <script src="js/sweetAlert.js"></script>
   <script src="js/valiInve.js"></script>
+  <script src="validarformulario.js"></script>
 <!-- iinventario general -->
-    
+
 
 
 </body>
