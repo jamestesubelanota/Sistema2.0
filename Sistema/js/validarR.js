@@ -20,15 +20,22 @@ if (apellido == null || apellido.length == 0 || /^\s+$/.test(apellido)) {
  alert("el campo apellido esta vacio");
 return false;
 }
-
-if (!/^\d{9}$/ .test(txtEdad2)) {
+if (txtEdad2 =="") {
+  alert("el campo telefono esta vacios");
+ return false;
+ }
+else if (!/^\d{9}$/ .test(txtEdad2)) {
  alert("el campo telefono no es un numero");
 return false;
 }
-if (!/^\d{8}$/ .test(cedula)) {
+if (cedula =="") {
  alert("el campo cedula esta vacio");
 return false;
 }
+else if (!/^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/ .test(cedula)) {
+  alert("el campo cedula no es correcto");
+ return false;
+ }
 if (genero == null || genero.length == 0 || /^\s+$/.test(genero)) {
  alert("el campo genero esta vacio");
 return false;
