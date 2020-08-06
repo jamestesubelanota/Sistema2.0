@@ -17,15 +17,15 @@ function validarFormulario(){
  
     //Test edad
     if( !/^\d{9}$/ .test(txtEdad)){
-      alert('ERROR: Debe ingresar un numero');
+      alert('ERROR: Debe ingresar un numero valido');
       return false;
     }
     if(!/^\d{9}$/ .test(txtEdad1)){
-        alert('ERROR: Debe ingresar un numero');
+        alert('ERROR: Debe ingresar un numero valido');
         return false;
       }
-      if(!/^\d{8}$/ .test(txtEdad2)){
-        alert('ERROR: Debe ingresar un numero');
+      if(!/^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/ .test(txtEdad2)){
+        alert('ERROR: Debe ingresar un cedula valida');
         return false;
       }
       
