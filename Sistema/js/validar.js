@@ -10,10 +10,15 @@ if (login === "" ) {
 
 }
 
-else if (password === "" ) {
+else if(!(/\w+([-+.']\w+)*@\w+\.\S+/.test(login))){
+  alert('ERROR: Debe escribir un correo válido');
+  return false;
+}
+
+if (password === "" ) {
   alert("El campo contraseña esta vacio");
   return false;
 
 }
-  return true;
+
 }
